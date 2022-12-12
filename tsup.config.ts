@@ -8,4 +8,7 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   dts: true,
+  external: [
+    "react"
+  ]
 });
