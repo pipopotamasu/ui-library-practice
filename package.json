@@ -32,7 +32,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "release": "release-it"
+    "release": "yarn build && release-it"
   },
   "peerDependencies": {
     "react": "^18.2.0",
