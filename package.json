@@ -1,7 +1,7 @@
 {
   "name": "ui-library-practice",
   "description": "for practice",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "pipopotamasu",
   "license": "MIT",
   "keywords": ["React"],
@@ -10,7 +10,12 @@
     "url": "https://github.com/pipopotamasu/ui-library-practice"
   },
   "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "files": [
     "dist"
   ],
