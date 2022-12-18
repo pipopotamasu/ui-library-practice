@@ -26,11 +26,13 @@
     "@types/react-dom": "^18.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "release-it": "^15.5.1",
     "tsup": "^6.5.0",
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "release": "release-it"
   },
   "peerDependencies": {
     "react": "^18.2.0",
