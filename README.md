@@ -11,10 +11,13 @@ $ yarn release
 
 ## What's included?
 
-TBD
+- tsup
+- release-it
+- storybook
 
 ## References
 
 - https://github.com/egoist/tsup
 - https://github.com/release-it/release-it
 - https://github.com/TimMikeladze/tsup-react-package-starter
+- https://yarnpkg.com/cli/link
