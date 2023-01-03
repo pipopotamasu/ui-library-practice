@@ -1,7 +1,21 @@
 import type { ButtonHTMLAttributes } from "react";
 
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = {
+  /**
+   * Button color
+   */
+  color?: "black" | "red" | "blue";
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button = ({ children, ...rest }: ButtonProps) => {
-  return <button {...rest}>{children}</button>;
+export const Button = ({
+  children,
+  color = "black",
+  style,
+  ...rest
+}: ButtonProps) => {
+  return (
+    <button {...rest} style={{ ...style, color }}>
+      {children}
+    </button>
+  );
 };
